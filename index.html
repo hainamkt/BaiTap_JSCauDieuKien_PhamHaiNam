@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS Câu Điều Kiện</title>
+
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="w-50 py-5">
+            <h2>Bài tập 1</h2> <br>
+            <form>
+                <div class="form-group">
+                    <input type="number" placeholder="Nhập số thứ 1" class="form-control" id="inpNumber1">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Nhập số thứ 2" class="form-control" id="inpNumber2">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Nhập số thứ 3" class="form-control" id="inpNumber3">
+                </div>
+                <button onclick="phepSoSanh()" type="button" class="btn btn-primary">Sắp xếp</button>
+            </form>
+            <br>
+            <p id="txtSapXep" class="alert alert-success"></p>
+        </div>
+
+        <div class="w-50 pb-5">
+            <h2>Bài tập 2</h2> <br>
+            <select class="form-control" id="chonThanhVien">
+                <option value="">Chọn thành viên</option>
+                <option value="Bố" id="inpBo">Bố</option>
+                <option value="Mẹ" id="inpMe">Mẹ</option>
+                <option value="Anh Trai" id="inpAnhTrai">Anh Trai</option>
+                <option value="Em Gái" id="inpEmGai">Em Gái</option>
+            </select> <br>
+            <button onclick="phepChaoHoi()" type="button" class="btn btn-primary">Gửi lời chào</button>
+            <br> <br>
+            <p id="txtLoiChao" class="alert alert-success"></p>
+        </div>
+        
+        <div class="w-50 pb-5">
+            <h2>Bài tập 3</h2> <br>
+            <form>
+                <div class="form-group">
+                    <input type="number" placeholder="Nhập số thứ 1" class="form-control" id="inpNumberX">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Nhập số thứ 2" class="form-control" id="inpNumberY">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Nhập số thứ 3" class="form-control" id="inpNumberZ">
+                </div>
+                <button onclick="timChanLe()" type="button" class="btn btn-primary">Đếm</button>
+            </form>
+            <br>
+            <p id="txtChiaSo" class="alert alert-success"></p>
+        </div>
+
+        <div class="w-50 pb-5">
+            <h2>Bài tập 4</h2> <br>
+            <form>
+                <div class="form-group">
+                    <input type="number" placeholder="Cạnh 1" class="form-control" id="inpCanhA">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Cạnh 2" class="form-control" id="inpCanhB">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Cạnh 3" class="form-control" id="inpCanhC">
+                </div>
+                <button onclick="timTamGiac()" type="button" class="btn btn-primary">Phân loại</button>
+            </form>
+            <br>
+            <p id="txtTamGiac" class="alert alert-success"></p>
+        </div>
+    </div>
+
+
+    <!-- BS4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/Baitap4.js"></script>
+</body>
+</html>
